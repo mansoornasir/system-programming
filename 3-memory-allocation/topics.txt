@@ -1,0 +1,5 @@
+malloc() - memory allocation
+calloc() - contigous allocation
+free()  - de-alloation
+realloc() - re-allocation
+
