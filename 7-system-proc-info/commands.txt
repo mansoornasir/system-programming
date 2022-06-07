@@ -1,0 +1,12 @@
+ls -l /proc
+ls -l /proc | grep '^d'
+ps -aux
+ls -ltr /proc/7494   <-- 7494 is the pid
+/proc/PID/cpu    Current and last cpu in which it was executed
+/proc/PID/mem
+/proc/PID/stat
+/proc/PID/statm
+/proc/PID/status
+/proc/meminfo
+/proc/diskstats
+/proc/filesystems

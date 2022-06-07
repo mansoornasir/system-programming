@@ -3,12 +3,12 @@
 
 struct Numbers 
 {
-    int num1, num2, num3;
+    long num1, num2, num3;
 };
 
 int main() 
 {
-    int num;
+    long num;
     struct Numbers number;
     FILE *fp;
     

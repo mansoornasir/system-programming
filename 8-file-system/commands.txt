@@ -1,0 +1,19 @@
+cat
+cd
+cp
+file
+head
+tail
+less
+more
+ls
+mkdir
+mv
+pwd
+rm
+rmdir
+touch
+whereis
+which
+df -k
+du -h /etc
