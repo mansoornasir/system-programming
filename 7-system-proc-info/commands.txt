@@ -1,7 +1,53 @@
-ls -l /proc
-ls -l /proc | grep '^d'
-ps -aux
-ls -ltr /proc/7494   <-- 7494 is the pid
+- Types of Processes
+    Foreground Processes
+    Background Processes
+- Process States in Linux
+    Running
+    Sleeping
+        Interruptible Sleep
+        Uninterruptable Sleep
+    Stopped
+    Zombie
+
+    A process in running state means that it is running or it’s ready to run.
+    The process is in a sleeping state when it is waiting for a resource to be available.
+    A process in Interruptible sleep will wakeup to handle signals, whereas a process in Uninterruptible sleep will not.
+    A process enters a stopped state when it receives a stop signal.
+    Zombie state is when a process is dead but the entry for the process is still present in the table.
+
+Commands
+    - top
+        PID
+        User
+        PR <-- priority
+        NI <-- Nice value
+        Virt <-- Virutal Memory assigned
+        RES <-- Physical Memory Assigned
+        SHR <-- Memory Shared with other processes
+        S
+            D <-- Uninterruptable Sleep 
+            R <-- Running
+            S <-- Sleeping
+            T <-- Traced or Stopped
+            Z <-- Zombie
+        %CPU: Percentage of CPU used by the process.
+        %MEM; Percentage of RAM used by the process.
+        TIME+: Total CPU time consumed by the process.
+    ps
+    ps -u
+    ps -A
+    kill -9
+    kill -L
+    nice -n [value] [prcocess name]
+    renice [value] -p 'pid'
+    ps -aux
+    ls -l /proc
+    ls -l /proc | grep '^d'
+    ls -ltr /proc/7494   <-- 7494 is the pid
+    pidof 'processname'
+    free
+    free -g -m
+    du -h
 /proc/PID/cpu    Current and last cpu in which it was executed
 /proc/PID/mem
 /proc/PID/stat
@@ -10,3 +56,5 @@ ls -ltr /proc/7494   <-- 7494 is the pid
 /proc/meminfo
 /proc/diskstats
 /proc/filesystems
+
+
